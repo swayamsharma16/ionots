@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 // Enable CORS
 app.use(
   cors({
-    origin: "http://localhost:5173", // Removed trailing slash
+    origin: process.env.Site, // Removed trailing slash
     methods: ["GET", "POST", "PUT", "DELETE"], // Allow specific methods
     allowedHeaders: ["Content-Type", "Authorization"], // Allow specific headers
   })
