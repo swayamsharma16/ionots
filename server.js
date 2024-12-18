@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 // Enable CORS
 app.use(
   cors({
-    origin: "https://clinquant-twilight-d5f619.netlify.app/"
+    origin: "https://clinquant-twilight-d5f619.netlify.app/",
     methods: ["GET", "POST", "PUT", "DELETE"], 
     allowedHeaders: ["Content-Type", "Authorization"], 
   })
