@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 
 // Enable CORS
 app.use(cors({
-    origin: "https://mellifluous-panda-fac550.netlify.app/",
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
 
